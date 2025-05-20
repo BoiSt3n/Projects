@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign up page</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #3b5998;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #17181a;
+            display: block;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div {
+            background-color: #fff;
+            padding: 20px;
+            margin: auto;
+            border-radius: 5px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        form {
+            /* display: flex; */
+            flex-direction: column;
+        }
+        #text {
+            color: #65676b;
+            font-size: 14px;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+            display: inline;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender-container {
+            display: inline;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #046c1c;
+            color: white;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #145db2;
+        }
+        #signin {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #signin a {
+            color: #046c1c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>FACEBOOK</h1>
+    <div>
+        <h2>Create a new account</h2>
+        <p id="text">it's quick and easy</p>
+        <hr>
+        <form action="" method="POST">
+            <!-- <label for="first_name">First Name:</label> -->
+            <input type="text" id="first_name" name="first_name" required placeholder="First Name"><br><br>
+
+            <!-- <label for="last_name">Last Name:</label> -->
+            <input type="text" id="last_name" name="last_name" required placeholder="Last name"><br><br>
+
+            <label for="Gender">Gender</label>
+            <div class="gender-container"> <input type="radio" name="male" id="male" placeholder="male">  Male</div>
+            <div class="gender-container"><input type="radio" name="female" id="female" placeholder="female">Female</div>
+            <br><br>
+
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" name="email" required placeholder="Email Address"><br><br>
+
+            <label for="birth_date">Date of Birth:</label>
+            <input type="date" id="birth_date" name="birth_date"><br><br>
+
+            <!-- <label for="phone">Phone Number:</label> -->
+            <input type="tel" id="phone" name="phone" placeholder="Mobile number" pattern="[0-9]*"><br><br>
+
+            <!-- <label for="password">Password:</label> -->
+            <input type="password" id="password" name="password" placeholder="New Password"><br>
+
+            <p>People who use our service may have uploaded your contact information to Facebook. <a href="https://web.facebook.com/r.php/?_rdc=1&_rdr#">Learn More</a></p><br>
+            <p>By clicking Sign Up, you agree to our <a href="https://www.facebook.com/policies/cookies/">Terms</a>, <a href="https://www.facebook.com/policies/privacy/">Data Policy</a> and <a href="https://www.facebook.com/policies/ads/">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p><br><br>
+            <input type="submit" value="Sign Up" style="background-color: #23b613; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;"><br><br>
+            <p id="signin"><a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#">Already have an account?</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,472 @@
+/* For the header,its a div container */
+.header {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    position: fixed;
+    font-size: 1rem;
+    color: white;
+    /* width: 100%; */
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 70px;
+    padding: 0px;
+    margin-top: 0px;
+    justify-content: right;
+    align-items: right;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+}
+/*this is for the body,an overall body code*/
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    display: column; 
+    position: relative;
+    /* height: 100vh; */
+}
+/*this is for the link in the header and logo */
+#nav-head{
+   width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    /* border-radius: 50%; */
+    justify-items: left;
+    align-items: left;
+    position: absolute;
+    top: -15px;
+    left: 70px;
+    color: whitesmoke;
+} 
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    justify-content: space-between;
+}
+a:active {
+    color: red;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: red;
+}
+a:visited {
+    color: purple;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-decoration-color: none;
+}
+a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+.header > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    justify-items: left;
+    align-items: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: black;
+}
+/*this is for the banner container and Video */
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../Images/cosmetic\ banner.jpg);
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+    background-position: center;
+    background-size: cover;
+}
+/*this is for the Artist introduction */
+.introduction{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+}
+.introduction h1{
+ font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 62px;
+}
+.introduction p {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.intro-btn{
+    background-color: transparent;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.intro-btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.intro-btn:active{
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+.intro-btn:visited{
+    background-color: purple;
+    color: white;
+    transition: 0.3s;
+}
+/*This is for about us*/
+.heading-about{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+}
+.heading-about h1{
+ font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 62px;
+}
+.heading-about p{
+     font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+.heading-about h2{
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 40px;
+}
+.artist-inspiration{
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: url(../../../../../Downloads/Burna\ Boy.jpeg); */
+    /* flex-wrap: wrap; */
+}
+.artist{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background-color: wheat;
+    transition: 0.5s;
+}
+.artist:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1.0);
+    transition: 0.3s;
+}
+/* this is for our services */
+.heading-services{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.heading-services h1{
+   font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 50px;
+}
+.heading-services li{
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    list-style: none;
+}
+#career-heading{
+   font-size: 4rem;
+    font-weight: bold;
+  font-family: "Underdog", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: black;
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+/* this is for the career */
+.Career-sec{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    display: inline-flex;
+    padding-bottom: auto;
+}
+.Career-sec h1{
+ font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 30px;
+}
+.Career-sec p{
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+/* this is for the blog container. */
+.blog-container{
+     width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+}
+.blog-container h3{
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 30px;
+}
+.blog-container p{
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.blog-container span{
+   font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+.blog-container form{
+   flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.blog-container form input{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.blog-container form textarea{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.blog-container form button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.blog-container form button:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+.blog-container form button:active{
+    background-color: blue;
+    transition: 0.3s;
+}
+.blog-container form button:visited{
+    background-color: purple;
+    transition: 0.3s;
+}
+.blog-container.fa{
+    color: black;
+}
+/* this is for the contact details */
+.contact{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+}
+.contact h1{
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 62px;
+}
+.contact p{
+   font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block; 
+    justify-content: space-between;
+}
+.contact a:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    text-decoration-style: none;
+    transition: 0.3s;
+}
+/* this is for the icons */
+.fa-solid.fa-star{
+    font-size: 30px;
+    color: black;
+    border: 2px groove red;
+    background-color: transparent;
+}
+.fa-solid.fa-star-half{
+    font-size: 30px;
+    color: black;
+    border: 2px groove red;
+    background-color: transparent;
+}
+.fa-solid.fa-star-half:hover{
+    color: red;
+    transition: 0.3s;
+}
+.fa-solid.fa-star:hover{
+    color: red;
+    transition: 0.3s;
+}
+/* this is for the footer */
+.footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+}
+.footer h3{
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    margin: auto;
+    font-size: 40px;
+}
+.footer p{
+   font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+}
+.footer>.icons .fa{
+color: darkmagenta;
+margin: 0 13px;
+cursor: pointer;
+padding: 10px 0;
+}

@@ -1,0 +1,444 @@
+/* for the header tag  */
+.header {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    position: fixed;
+    font-size: 1rem;
+    color: white;
+    /* width: 100%; */
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 70px;
+    padding: 0px;
+    margin-top: 0px;
+    justify-content: right;
+    align-items: right;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+}
+/* for the body tag  */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: column; 
+    position: relative;
+    /* height: 100vh; */
+    width: 100%;
+}
+/* this is for the header  */
+#nav-head{
+   width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    /* border-radius: 50%; */
+    justify-items: left;
+    align-items: left;
+    position: absolute;
+    top: -15px;
+    left: 70px;
+    color: whitesmoke;
+} 
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    justify-content: space-between;
+}
+a:active {
+    color: red;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: red;
+}
+a:visited {
+    color: purple;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-decoration-color: none;
+}
+a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+.header > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    justify-items: left;
+    align-items: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: black;
+}
+/* heading  */
+#head{
+    /* width: 100%; */
+    height: 120px;
+    display: column;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    left: 0px;
+}
+#head > h1{
+    font-size: 4rem;
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    color: #D4af37;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 10px;
+}
+#head > p{
+    font-size: 1.5rem;
+    color: grey;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px;
+}
+/* for the first div  */
+.right-text{
+    width: 50%;
+    height: 370px;
+    display: column;
+    padding: 0px 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    top: 240px;
+    right: 0px;
+}
+#tag{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    display: inline;
+    background-color: #D4af37;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    margin-top: 20px;
+}
+#tag > p{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+#tag2{
+     width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    display: inline;
+    background-color: #D4af37;
+    position: absolute;
+    top: 10px;
+    right: 380px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    margin-top: 20px;
+}
+#tag2 > p{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.right-text > h1{
+    font-size: 2rem;
+font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: weight 400;
+    width: 100;
+    text-align: center;
+    margin: 0px;
+    padding: 60px 0px 0px 0px;
+    color: grey;
+}
+.right-text > p{
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+    /* display: inline; */
+    color: honeydew;
+}
+#num1{
+    background-color: black;
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#num1 > h1{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    font-weight: bold;
+    color: #D4af37;
+}
+#num1 > p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 40px 10px 0px;
+    font-weight: bold;
+    color: grey;
+}
+#num2{
+    background-color: black;
+    width: 20%;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    left: 70%;
+   display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#num2 > h1{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    font-weight: bold;
+    color: #D4af37;
+}
+#p2{
+   font-size: 1.5rem;
+    color: grey;
+    margin: 0px;
+    padding: 0px 40px 10px 0px;
+    font-weight:bold;
+    display: block;
+}
+/* this is for the image section  */
+.left-pic{
+    width: 45%;
+    height: 600px;
+    display: column;
+    padding: 0px 0px;
+    margin-left: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    top: 300px;
+    left: -5px;
+}
+#image{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    z-index: 2;
+
+     transition-property: height;
+ transition-duration: 50ms;
+   transition-timing-function: ease-in-out;
+ transition-delay: 0;
+  animation: floatMain 4s ease-in-out infinite;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+@keyframes floatMain {
+    0% { transform: translateY(0) }
+    50% { transform: translateY(-20px) }
+    100% { transform: translateY(0) }
+}
+#image2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+  right: 30px;
+  top: 10px;
+    z-index: 1;
+
+    
+     transition-property: height;
+ transition-duration: 50ms;
+   transition-timing-function: ease-in-out;
+ transition-delay: 0;
+  animation: floatMain 4s ease-in-out infinite;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+@keyframes floatMain {
+    0% { transform: translateY(0) }
+    50% { transform: translateY(-20px) }
+    100% { transform: translateY(0) }
+}
+#image3{
+     width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+
+    
+     transition-property: height;
+ transition-duration: 50ms;
+   transition-timing-function: ease-in-out;
+ transition-delay: 0;
+  animation: floatMain 4s ease-in-out infinite;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+@keyframes floatMain {
+    0% { transform: translateY(0) }
+    50% { transform: translateY(-20px) }
+    100% { transform: translateY(0) }
+}
+#image:hover{
+    width: 350px;
+    height: 450px;
+    transition-property: height;
+   /* transition-property: width; */
+   transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+   transition-delay: 0;
+}
+#image:hover::after{
+ width: 300px;
+ height: 400px;
+ /* transition-property: width; */
+ transition-property: height;
+ transition-duration: 50ms;
+   transition-timing-function: ease-in-out;
+ transition-delay: 0;
+} 
+#image2:hover{
+    width: 250px;
+    height: 250px;
+    transition-property: height;
+   /* transition-property: width; */
+ transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+   transition-delay: 0;
+}
+#image2:hover::after{
+  width: 200px;
+    height: 200px;
+  /* transition-property: width; */
+ transition-property: height;
+ transition-duration: 50ms;
+   transition-timing-function: ease-in-out;
+ transition-delay: 0;
+}
+#image3:hover{
+    width: 250px;
+    height: 250px;
+     transition-property: height;
+   /* transition-property: width; */
+ transition-duration: 50ms;
+   transition-timing-function: ease-in-out;
+   transition-delay: 0;
+}
+#image3:hover::after{
+ width: 200px;
+    height: 200px;
+   /* transition-property: width; */
+ transition-property: height;
+transition-duration: 50ms;
+ transition-timing-function: ease-in-out;
+ transition-delay: 0;
+}
+/* this is for the pic on the right  */
+.right-pic{
+     width: 50%;
+    height: 600px;
+    display: column;
+    padding: 10px 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    right: 20px;
+    bottom: -50x;
+}
+/* this is for the text on the left  */
+.left-text{
+     width: 50%;
+    height: 400px;
+    display: column;
+    padding: 10px 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    top:450px;
+    left: 20px;
+}
+#left-h1{
+     font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0px 0px 0px 0px;
+    color: grey;
+    font-weight: bold;
+}
+#left-paragraph{
+     font-size: 1.5rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 40px 20px 0px;
+    font-weight: bold;
+    color: white;
+}

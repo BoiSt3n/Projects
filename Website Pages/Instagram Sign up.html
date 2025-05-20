@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* for the overall page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1818;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+            /* flex-direction: column; */
+        }
+        /* for the  container */
+        .box {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #1a1818;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+        .container {
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: column;
+            align-items: center;
+            /* height: 100vh; */
+        }
+        /* for heading 1 */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        /* for the inputs */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 90%;
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            font-size: 14px;
+            padding: 10px;
+            background-color: #131111;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3897f0;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #007bb5;
+        }
+        /* for the paragraphs */
+        p {
+            font-size: 14px;
+            color: #999;
+            text-align: center;
+        }
+        /* for the foota */
+        footer {
+            /* margin-top: 20px; */
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #f3f3f3;
+            padding: 10px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            align-items: center;
+        }
+        footer a {
+            color: #f9fafa;
+            text-decoration: none;
+        }
+         footer a :hover{
+            text-decoration: underline;
+            color: #3897f0;
+        }
+        #p-learn {
+            color: #3897f0;
+            text-decoration: none;
+        }
+        #p-learn:hover {
+            text-decoration: double;
+        }
+       .language-selection {
+            margin-top: 20px;
+        }
+        .language-selection select {
+            padding: 5px;
+            font-size: 14px;
+            /* border-radius: 5px; */
+            border: none;
+            background-color:transparent;
+            color: black;
+        }
+        .language-selection p {
+            margin-top: 10px;
+            color: #999;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .language-selection a {
+            color: #3897f0;
+            text-decoration: none;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="box">
+    <form action="" method="post">
+        <h1 class="playfair-display-<uniquifier> ">Instagram</h1>
+        <p>Sign up to see photos and videos from your friends.</p>
+        <input type="button" value="Log in with Facebook" onclick="window.location.href='https://www.facebook.com/'"><br><br>
+        <p>OR</p>
+        <hr><hr>
+        <input type="text" name="name" placeholder="Full Name" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>  
+        <input type="text" name="username" placeholder="Username" required><br><br>
+
+
+        <p>People who use our service may have uploaded your contact information to Instagram.</p>
+        <p id="p-learn"><a href="https://web.facebook.com/help/instagram/261704639352628?_rdc=1&_rdr#">Learn More</a></p>
+        <p>By signing up, you agree to our <a href="https://help.instagram.com/581066165581870">Terms</a>, <a href="https://help.instagram.com/519522125107875">Data Policy</a> and <a href="https://help.instagram.com/189664148063437">Cookies Policy</a>.</p>
+        <input type="button" value="Sign Up" onclick="window.location.href='https://www.instagram.com/'"><br><br>
+    </form>
+  </div>
+  <div class="box">
+     <p>Have an account?</p>
+     <p> <a href="../Projects/Instagram sign in page.html">Log in</a></p>
+  </div>
+  </div>
+  <footer>
+    <a href="http://">Meta</a>
+    <a href="http://">About</a>
+    <a href="http://">Blog</a>
+    <a href="http://">Jobs</a>
+    <a href="http://">Help</a>
+    <a href="http://">API</a>
+    <a href="http://">Privacy</a>
+    <a href="http://">Terms</a>
+    <a href="http://">Location</a>
+    <a href="http://">Instagram Lite</a>
+    <a href="http://">Threads</a>
+    <a href="http://">Contact Uploading & Non-Users</a>
+    <a href="http://">Meta Verified</a>
+    <div class="language-selection">
+        <select id="Language">
+            <option value="English">English</option>
+            <option value="Igbo">Igbo</option>
+            <option value="Pidgin">Pidgin</option>
+            <option value="Hausa">Hausa</option>
+            <option value="Arabic">Arabic</option>
+            <option value="German">German</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Italian">Italian</option>
+            <option value="Russian">Russian</option>
+            <option value="Korean">Korean</option>
+            <option value="Portuguese">Portuguese</option>
+            <option value="Dutch">Dutch</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Swedish">Swedish</option>
+            <option value="Norwegian">Norwegian</option>
+            <option value="Danish">Danish</option>
+            <option value="Finnish">Finnish</option>
+            <option value="Polish">Polish</option>
+            <option value="Czech">Czech</option>
+            <option value="Hungarian">Hungarian</option>
+            <option value="Romanian">Romanian</option>
+            <option value="Bulgarian">Bulgarian</option>
+            <option value="Greek">Greek</option>
+            <option value="Thai">Thai</option>
+            <option value="Vietnamese">Vietnamese</option>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Malay">Malay</option>
+            <option value="Filipino">Filipino</option>
+            <option value="Swahili">Swahili</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Gujarati">Gujarati</option>
+            <option value="Punjabi">Punjabi</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Burmese">Burmese</option>
+            <option value="Khmer">Khmer</option>
+            <option value="Lao">Lao</option>
+            <option value="Sinhalese">Sinhalese</option>
+            <option value="Hebrew">Hebrew</option>
+            <option value="Ukrainian">Ukrainian</option>
+            <option value="Serbian">Serbian</option>
+            <option value="Croatian">Croatian</option>
+            <option value="Slovak">Slovak</option>
+            <option value="Slovenian">Slovenian</option>
+            <option value="Estonian">Estonian</option>
+            <option value="Latvian">Latvian</option>
+            <option value="Lithuanian">Lithuanian</option>
+            <option value="Icelandic">Icelandic</option>
+            <option value="Maltese">Maltese</option>
+        </select>
+        <p>© 2023 Instagram from Meta</p>
+    </div>
+  </footer>
+
+</body>
+</html>

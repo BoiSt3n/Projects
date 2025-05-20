@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../Projects/Instagram Sign up.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1818;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .box {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            margin: auto;
+            background-color: #1a1818;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: block;
+            height: 70vh;
+        }
+        .container {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            height: 50px;
+            border: none
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        input[type="text"],
+        input[type="password"], input[type="email"] {
+            width: 90%;
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            font-size: 14px;
+            padding: 10px;
+            background-color: #131111;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="button"]:hover {
+            background-color: #007bbf;
+        }
+        a {
+            text-decoration: none;
+            color: #0095f6;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            color: #007bbf;
+            text-align: center;
+            font-size: 14px;
+            margin: 20px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+        /* p[alt=""] {
+            color: #007bbf;
+            text-align: center;
+            font-size: 14px;
+            margin: 20px;
+        } */
+         .box:last-child{
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            margin: 20px;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box">
+            <h1>Instagram</h1>
+            <form action="Instagram%20sign%20in%20page.html" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="button" value="Sign In">
+                <p>OR</p>
+                <hr><hr>
+                <p alt="" style="color: #007bbf;">Login With Facebook</p>
+                <p href="" alt="">Forgot Password?</p>
+            </form>
+        </div>
+        <div class="container">
+            <p style="color: white;">Don't have an account? <a href="../Projects/Instagram Sign up.html" style="color: #0095f6;">Sign Up</a></p>
+    </div>
+    
+</body>
+</html>
