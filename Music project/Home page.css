@@ -22,7 +22,7 @@
 }
 /*this is for the body,an overall body code*/
 body {
-    background-color: white;
+    background-color: black;
     font-family: Arial, sans-serif;
     display: column; 
     position: relative;
@@ -126,7 +126,7 @@ a:hover::after{
   font-style: normal;
     text-align: center;
     margin: 20px 0;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     line-height: 40px;
 }
@@ -180,7 +180,7 @@ a:hover::after{
   font-style: normal;
     text-align: center;
     margin: 20px 0;
-    color: black;
+    color: white;
 }
 .heading-about h2{
   font-family: "Saira", sans-serif;
