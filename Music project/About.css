@@ -21,8 +21,13 @@
 
 }
 /* for the body tag  */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}  
 body {
-    background-color: black;
+    background-color: rgb(40, 90, 70);
     font-family: Arial, sans-serif;
     display: column; 
     position: relative;
@@ -97,7 +102,7 @@ a:hover::after{
     display: column;
     justify-content: center;
     align-content: center;
-    background-color: black;
+    background-color: rgb(40, 90, 70);
     position: absolute;
     right: 0px;
     top: 70px;
@@ -132,7 +137,7 @@ a:hover::after{
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(40, 90, 70);
     position: absolute;
     top: 240px;
     right: 0px;
@@ -204,7 +209,7 @@ font-family: "Saira", sans-serif;
     color: honeydew;
 }
 #num1{
-    background-color: black;
+   background-color: rgb(40, 90, 70);
     width: 20%;
     height: 100px;
     display: flex;
@@ -230,7 +235,7 @@ font-family: "Saira", sans-serif;
     color: grey;
 }
 #num2{
-    background-color: black;
+     background-color: rgb(40, 90, 70);
     width: 20%;
     height: 100px;
     position: relative;
@@ -268,7 +273,7 @@ font-family: "Saira", sans-serif;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: black;
+   background-color: rgb(40, 90, 70);
     position: relative;
     top: 300px;
     left: -5px;
@@ -406,7 +411,7 @@ transition-duration: 50ms;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(40, 90, 70);
     position: absolute;
     right: 20px;
     bottom: -50x;
@@ -420,7 +425,7 @@ transition-duration: 50ms;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(40, 90, 70);
     position: relative;
     top:450px;
     left: 20px;

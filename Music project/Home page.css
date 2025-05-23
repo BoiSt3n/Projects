@@ -22,7 +22,7 @@
 }
 /*this is for the body,an overall body code*/
 body {
-    background-color: black;
+    background-color: rgb(40, 90, 70);
     font-family: Arial, sans-serif;
     display: column; 
     position: relative;
@@ -172,6 +172,7 @@ a:hover::after{
     width: 100;
     margin: auto;
     font-size: 62px;
+    color: grey;
 }
 .heading-about p{
      font-family: "Space Grotesk", sans-serif;
@@ -190,7 +191,8 @@ a:hover::after{
   font-variation-settings: weight 400;
     width: 100;
     margin: auto;
-    font-size: 40px;
+    font-size: 50px;
+    color: white;
 }
 .artist-inspiration{
     width: 90%;
@@ -210,8 +212,11 @@ a:hover::after{
     background-color: wheat;
     transition: 0.5s;
 }
+.artist p{
+    color: black;
+}
 .artist:hover{
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1.0);
+    box-shadow: 0 0 10px 0 rgb(246, 241, 241);
     transition: 0.3s;
 }
 /* this is for our services */
@@ -234,6 +239,7 @@ a:hover::after{
     width: 100;
     margin: auto;
     font-size: 50px;
+    color: gray;
 }
 .heading-services li{
     font-family: "Space Grotesk", sans-serif;
@@ -242,7 +248,7 @@ a:hover::after{
   font-style: normal;
     text-align: center;
     margin: 20px 0;
-    color: black;
+    color: white;
     list-style: none;
 }
 #career-heading{
@@ -256,7 +262,7 @@ a:hover::after{
     text-decoration-color: black;
     text-align: center;
     margin-top: 50px;
-    color: black;
+    color: grey;
 }
 /* this is for the career */
 .Career-sec{
@@ -276,6 +282,7 @@ a:hover::after{
     width: 100;
     margin: auto;
     font-size: 30px;
+    color: white;
 }
 .Career-sec p{
     font-family: "Space Grotesk", sans-serif;
@@ -284,7 +291,7 @@ a:hover::after{
   font-style: normal;
     text-align: center;
     margin: 20px 0;
-    color: black;
+    color: white;
 }
 /* this is for the blog container. */
 .blog-container{
@@ -302,6 +309,7 @@ a:hover::after{
     width: 100;
     margin: auto;
     font-size: 30px;
+    color: goldenrod;
 }
 .blog-container p{
     font-family: "Space Grotesk", sans-serif;
@@ -310,14 +318,9 @@ a:hover::after{
   font-style: normal;
     text-align: center;
     margin: 20px 0;
-    color: black;
+    color: white;
     line-height: 40px;
     font-size: 1.5rem;
-}
-.blog-container span{
-   font-size: 2rem;
-    font-weight: bold;
-    color: red;
 }
 .blog-container form{
    flex-direction: column;
@@ -341,7 +344,7 @@ a:hover::after{
     border: 2px solid black;
 }
 .blog-container form button{
-    background-color: black;
+    background-color: goldenrod;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -379,6 +382,7 @@ a:hover::after{
     width: 100;
     margin: auto;
     font-size: 62px;
+    color: gray;
 }
 .contact p{
    font-family: "Space Grotesk", sans-serif;
@@ -405,7 +409,7 @@ a:hover::after{
     justify-content: space-between;
 }
 .contact a:hover{
-    background-color: black;
+    background-color: transparent;
     color: white;
     padding: 5px;
     text-decoration: none;
@@ -435,7 +439,7 @@ a:hover::after{
 }
 /* this is for the footer */
 .footer{
-    background-color: gray;
+   background-color: rgb(40, 90, 70);
     color: white;
     text-align: center;
     padding: 20px 0;
